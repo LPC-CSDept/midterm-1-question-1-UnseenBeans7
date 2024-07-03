@@ -14,11 +14,15 @@ def main():
     """
     consecutive = 0
     for num in number:
-        if number % 2 == 0:
+        if num % 2 == 0:
             consecutive += 1
         else:
             if consecutive >= 2:
                 evencnt += 1
+                consecutive = 0
+                
+    if consecutive >= 2:
+        evencnt += 1
         
     print(evencnt)
 
