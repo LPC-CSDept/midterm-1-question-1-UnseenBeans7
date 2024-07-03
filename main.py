@@ -19,7 +19,7 @@ def main():
         else:
             if consecutive >= 2:
                 evencnt += 1
-                consecutive = 0
+            consecutive = 0
                 
     if consecutive >= 2:
         evencnt += 1
